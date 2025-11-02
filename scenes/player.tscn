@@ -1,0 +1,33 @@
+[gd_scene load_steps=4 format=3 uid="uid://dg7kogopiiris"]
+
+[ext_resource type="Script" uid="uid://c38v1fnnjk1we" path="res://scripts/player.gd" id="1_g2els"]
+[ext_resource type="PackedScene" uid="uid://cudc7itwhprb" path="res://assets/models/replicate-prediction-z0m0rn3tddrj40ct8378bt54ew-0.glb" id="2_g2els"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_dqkch"]
+radius = 0.31921387
+height = 1.0997925
+
+[node name="Player" type="CharacterBody3D"]
+script = ExtResource("1_g2els")
+
+[node name="replicate-prediction-z0m0rn3tddrj40ct8378bt54ew-0" parent="." instance=ExtResource("2_g2els")]
+transform = Transform3D(-2, 0, -1.7484555e-07, 0, 2, 0, 1.7484555e-07, 0, -2, 0, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.043038607, -0.23999399, -0.019674718)
+shape = SubResource("CapsuleShape3D_dqkch")
+
+[node name="CameraPivot" type="Node3D" parent="."]
+
+[node name="Camera3D" type="Camera3D" parent="CameraPivot"]
+transform = Transform3D(1, 0, 0, 0, 0.9396926, 0.34202012, 0, -0.34202012, 0.9396926, 0, 3, 6)
+
+[node name="OmniLight3D" type="OmniLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.5, -2)
+light_energy = 2.3
+omni_range = 12.1
+
+[node name="OmniLight3D2" type="OmniLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.5, 2)
+light_energy = 2.3
+omni_range = 12.1

@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://bucjm5v3xstxi"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_kahox"]
+
+[node name="Coin" type="Area3D"]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.1329608, -0.14264631, 0.07856417)
+mesh = SubResource("BoxMesh_kahox")

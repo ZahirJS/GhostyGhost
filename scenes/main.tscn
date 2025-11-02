@@ -1,0 +1,219 @@
+[gd_scene load_steps=6 format=3 uid="uid://kkd84gta5gny"]
+
+[ext_resource type="PackedScene" uid="uid://dg7kogopiiris" path="res://scenes/player.tscn" id="1_o5qli"]
+[ext_resource type="PackedScene" uid="uid://mmgqlib5cm2x" path="res://assets/models/replicate-prediction-71jvb7ae65rj60ct8c0ahegc6r-0.glb" id="1_sugp2"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_o5qli"]
+size = Vector3(20.340454, 0.5, 19.495285)
+
+[sub_resource type="Sky" id="Sky_jyhfs"]
+
+[sub_resource type="Environment" id="Environment_0wfyh"]
+background_mode = 1
+background_color = Color(0.10980392, 0.09411765, 0.12941177, 1)
+sky = SubResource("Sky_jyhfs")
+ambient_light_source = 2
+ambient_light_color = Color(0.7750634, 0.7750634, 0.7750634, 1)
+ambient_light_energy = 0.47
+
+[node name="Main" type="Node3D"]
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(0.70710677, -0.49999997, 0.49999997, 0, 0.70710677, 0.70710677, -0.70710677, -0.49999997, 0.49999997, -45, 45, 0)
+
+[node name="DirectionalLight3D2" type="DirectionalLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.70710677, 0.70710677, 0, -0.70710677, 0.70710677, -45, 135, 0)
+
+[node name="DirectionalLight3D3" type="DirectionalLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.70710677, 0.70710677, 0, -0.70710677, 0.70710677, 30, 135, 0)
+
+[node name="DirectionalLight3D4" type="DirectionalLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, -4.3711385e-08, 0.99999994, 0, -0.99999994, -4.3711385e-08, 30, 135, 0)
+
+[node name="DirectionalLight3D5" type="DirectionalLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, -4.3711385e-08, -0.99999994, 0, 0.99999994, -4.3711385e-08, 30, 135, 0)
+
+[node name="base" type="StaticBody3D" parent="."]
+
+[node name="replicate-prediction-71jvb7ae65rj60ct8c0ahegc6r-0" parent="base" instance=ExtResource("1_sugp2")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 0, 0.15865397, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="base"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.68359375, 1.0173864, 0)
+shape = SubResource("BoxShape3D_o5qli")
+
+[node name="base2" type="StaticBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.5150547, 0.5128205, -10.281775)
+
+[node name="replicate-prediction-71jvb7ae65rj60ct8c0ahegc6r-0" parent="base2" instance=ExtResource("1_sugp2")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 0, 0.15865397, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="base2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.68359375, 1.0173864, 0)
+shape = SubResource("BoxShape3D_o5qli")
+
+[node name="base3" type="StaticBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.7272272, 1.4907522, -21.83218)
+
+[node name="replicate-prediction-71jvb7ae65rj60ct8c0ahegc6r-0" parent="base3" instance=ExtResource("1_sugp2")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 0, 0.15865397, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="base3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.68359375, 1.0173864, 0)
+shape = SubResource("BoxShape3D_o5qli")
+
+[node name="base4" type="StaticBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.759531, 4.367792, -34.390305)
+
+[node name="replicate-prediction-71jvb7ae65rj60ct8c0ahegc6r-0" parent="base4" instance=ExtResource("1_sugp2")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 0, 0.15865397, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="base4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.68359375, 1.0173864, 0)
+shape = SubResource("BoxShape3D_o5qli")
+
+[node name="base5" type="StaticBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.159313, 5.504537, -21.752369)
+
+[node name="replicate-prediction-71jvb7ae65rj60ct8c0ahegc6r-0" parent="base5" instance=ExtResource("1_sugp2")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 0, 0.15865397, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="base5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.68359375, 1.0173864, 0)
+shape = SubResource("BoxShape3D_o5qli")
+
+[node name="base6" type="StaticBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14.031432, 5.321877, -10.140537)
+
+[node name="replicate-prediction-71jvb7ae65rj60ct8c0ahegc6r-0" parent="base6" instance=ExtResource("1_sugp2")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 0, 0.15865397, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="base6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.68359375, 1.0173864, 0)
+shape = SubResource("BoxShape3D_o5qli")
+
+[node name="base7" type="StaticBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22.746841, 7.632438, -34.98908)
+
+[node name="replicate-prediction-71jvb7ae65rj60ct8c0ahegc6r-0" parent="base7" instance=ExtResource("1_sugp2")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 0, 0.15865397, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="base7"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.68359375, 1.0173864, 0)
+shape = SubResource("BoxShape3D_o5qli")
+
+[node name="base8" type="StaticBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 31.598213, 8.93121, -23.242865)
+
+[node name="replicate-prediction-71jvb7ae65rj60ct8c0ahegc6r-0" parent="base8" instance=ExtResource("1_sugp2")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 0, 0.15865397, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="base8"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.68359375, 1.0173864, 0)
+shape = SubResource("BoxShape3D_o5qli")
+
+[node name="base9" type="StaticBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 37.02181, 10.480262, -9.6989)
+
+[node name="replicate-prediction-71jvb7ae65rj60ct8c0ahegc6r-0" parent="base9" instance=ExtResource("1_sugp2")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 0, 0.15865397, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="base9"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.68359375, 1.0173864, 0)
+shape = SubResource("BoxShape3D_o5qli")
+
+[node name="base10" type="StaticBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24.640991, 13.267932, -9.6989)
+
+[node name="replicate-prediction-71jvb7ae65rj60ct8c0ahegc6r-0" parent="base10" instance=ExtResource("1_sugp2")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 0, 0.15865397, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="base10"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.68359375, 1.0173864, 0)
+shape = SubResource("BoxShape3D_o5qli")
+
+[node name="base11" type="StaticBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 29.2795, 15.849248, 1.9320564)
+
+[node name="replicate-prediction-71jvb7ae65rj60ct8c0ahegc6r-0" parent="base11" instance=ExtResource("1_sugp2")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 0, 0.15865397, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="base11"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.68359375, 1.0173864, 0)
+shape = SubResource("BoxShape3D_o5qli")
+
+[node name="base12" type="StaticBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15.222528, 18.099491, 10.006237)
+
+[node name="replicate-prediction-71jvb7ae65rj60ct8c0ahegc6r-0" parent="base12" instance=ExtResource("1_sugp2")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 0, 0.15865397, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="base12"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.68359375, 1.0173864, 0)
+shape = SubResource("BoxShape3D_o5qli")
+
+[node name="base13" type="StaticBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.902771, 18.099491, 10.006237)
+
+[node name="replicate-prediction-71jvb7ae65rj60ct8c0ahegc6r-0" parent="base13" instance=ExtResource("1_sugp2")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 0, 0.15865397, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="base13"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.68359375, 1.0173864, 0)
+shape = SubResource("BoxShape3D_o5qli")
+
+[node name="base14" type="StaticBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.7985039, 20.801752, -6.060858)
+
+[node name="replicate-prediction-71jvb7ae65rj60ct8c0ahegc6r-0" parent="base14" instance=ExtResource("1_sugp2")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 0, 0.15865397, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="base14"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.68359375, 1.0173864, 0)
+shape = SubResource("BoxShape3D_o5qli")
+
+[node name="base15" type="StaticBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.145132, 23.755444, -16.63445)
+
+[node name="replicate-prediction-71jvb7ae65rj60ct8c0ahegc6r-0" parent="base15" instance=ExtResource("1_sugp2")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 0, 0.15865397, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="base15"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.68359375, 1.0173864, 0)
+shape = SubResource("BoxShape3D_o5qli")
+
+[node name="base16" type="StaticBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.5596924, 28.808008, -28.225603)
+
+[node name="replicate-prediction-71jvb7ae65rj60ct8c0ahegc6r-0" parent="base16" instance=ExtResource("1_sugp2")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 0, 0.15865397, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="base16"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.68359375, 1.0173864, 0)
+shape = SubResource("BoxShape3D_o5qli")
+
+[node name="base17" type="StaticBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.087419, 33.29859, -38.223724)
+
+[node name="replicate-prediction-71jvb7ae65rj60ct8c0ahegc6r-0" parent="base17" instance=ExtResource("1_sugp2")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 0, 0.15865397, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="base17"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.68359375, 1.0173864, 0)
+shape = SubResource("BoxShape3D_o5qli")
+
+[node name="base18" type="StaticBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.1883278, 36.592243, -50.5242)
+
+[node name="replicate-prediction-71jvb7ae65rj60ct8c0ahegc6r-0" parent="base18" instance=ExtResource("1_sugp2")]
+transform = Transform3D(24, 0, 0, 0, 24, 0, 0, 0, 24, 0, -3.1518593, -13.813156)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="base18"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.6592436, -0.6168518, -14.223221)
+shape = SubResource("BoxShape3D_o5qli")
+
+[node name="Player" parent="." instance=ExtResource("1_o5qli")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 0)
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_0wfyh")

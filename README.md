@@ -7,5 +7,5 @@
 
 <div align="center">
   <img src="game2.png" alt="Imagen 1" width="400"/>
-  <img src="game3.png" alt="Imagen 2" width="400"/>
+  <img src="game3.jpeg" alt="Imagen 2" width="400"/>
 </div>

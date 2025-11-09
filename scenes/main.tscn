@@ -1,22 +1,26 @@
-[gd_scene load_steps=6 format=3 uid="uid://kkd84gta5gny"]
+[gd_scene load_steps=9 format=3 uid="uid://kkd84gta5gny"]
 
+[ext_resource type="Script" uid="uid://b6prj16fjpjqu" path="res://scenes/main.gd" id="1_jyhfs"]
 [ext_resource type="PackedScene" uid="uid://dg7kogopiiris" path="res://scenes/player.tscn" id="1_o5qli"]
 [ext_resource type="PackedScene" uid="uid://mmgqlib5cm2x" path="res://assets/models/replicate-prediction-71jvb7ae65rj60ct8c0ahegc6r-0.glb" id="1_sugp2"]
+[ext_resource type="PackedScene" uid="uid://bucjm5v3xstxi" path="res://scenes/coin.tscn" id="3_sugp2"]
+[ext_resource type="PackedScene" uid="uid://cij17jc0pjk1h" path="res://pumpkineitor.tscn" id="5_tbgi4"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_o5qli"]
-size = Vector3(20.340454, 0.5, 19.495285)
+size = Vector3(8.775879, 0.5, 9.413574)
 
 [sub_resource type="Sky" id="Sky_jyhfs"]
 
 [sub_resource type="Environment" id="Environment_0wfyh"]
 background_mode = 1
-background_color = Color(0.10980392, 0.09411765, 0.12941177, 1)
+background_color = Color(0.2272157, 0.41301352, 0.5257377, 1)
 sky = SubResource("Sky_jyhfs")
 ambient_light_source = 2
 ambient_light_color = Color(0.7750634, 0.7750634, 0.7750634, 1)
 ambient_light_energy = 0.47
 
 [node name="Main" type="Node3D"]
+script = ExtResource("1_jyhfs")
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
 transform = Transform3D(0.70710677, -0.49999997, 0.49999997, 0, 0.70710677, 0.70710677, -0.70710677, -0.49999997, 0.49999997, -45, 45, 0)
@@ -69,7 +73,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.759531, 4.367792, -34.39030
 transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 0, 0.15865397, 0)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="base4"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.68359375, 1.0173864, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.13989258, 1.0173864, -0.2932129)
 shape = SubResource("BoxShape3D_o5qli")
 
 [node name="base5" type="StaticBody3D" parent="."]
@@ -206,10 +210,10 @@ shape = SubResource("BoxShape3D_o5qli")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.1883278, 36.592243, -50.5242)
 
 [node name="replicate-prediction-71jvb7ae65rj60ct8c0ahegc6r-0" parent="base18" instance=ExtResource("1_sugp2")]
-transform = Transform3D(24, 0, 0, 0, 24, 0, 0, 0, 24, 0, -3.1518593, -13.813156)
+transform = Transform3D(24, 0, 0, 0, 24, 0, 0, 0, 24, -6.1822453, -3.905262, -0.52433395)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="base18"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.6592436, -0.6168518, -14.223221)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.2371564, -1.3859215, 0.6656532)
 shape = SubResource("BoxShape3D_o5qli")
 
 [node name="Player" parent="." instance=ExtResource("1_o5qli")]
@@ -217,3 +221,33 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 0)
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_0wfyh")
+
+[node name="Coin" parent="." instance=ExtResource("3_sugp2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.5892117, 1.5439899, -10.212287)
+
+[node name="Coin2" parent="." instance=ExtResource("3_sugp2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.6973076, 5.479449, -34.45484)
+
+[node name="Coin3" parent="." instance=ExtResource("3_sugp2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 31.586332, 9.977417, -23.25112)
+
+[node name="Coin4" parent="." instance=ExtResource("3_sugp2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15.194302, 19.109465, 9.957611)
+
+[node name="Coin5" parent="." instance=ExtResource("3_sugp2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14.610634, 29.079872, -26.348942)
+
+[node name="Coin6" parent="." instance=ExtResource("3_sugp2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.140281, 35.009357, -45.82808)
+
+[node name="Coin7" parent="." instance=ExtResource("3_sugp2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.962061, 35.009357, -45.82808)
+
+[node name="Coin8" parent="." instance=ExtResource("3_sugp2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.495005, 35.009357, -47.328835)
+
+[node name="Pumpkineitor" parent="." instance=ExtResource("5_tbgi4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.09818792, 5.1396265, -20.837616)
+
+[node name="Pumpkineitor2" parent="." instance=ExtResource("5_tbgi4")]
+transform = Transform3D(0.4999999, 0, -0.86602545, 0, 1, 0, 0.86602545, 0, 0.4999999, 22.536314, 11.153655, -34.772205)

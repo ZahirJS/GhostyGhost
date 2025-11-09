@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://cij17jc0pjk1h"]
+
+[ext_resource type="PackedScene" uid="uid://djk6ikr442cra" path="res://assets/models/replicate-prediction-x2dxng4ycsrj60ctcwksf1tekw-0.glb" id="1_shdt6"]
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_cqb3f"]
+height = 2.6066132
+radius = 1.0224609
+
+[node name="Pumpkineitor" type="Node3D"]
+
+[node name="replicate-prediction-x2dxng4ycsrj60ctcwksf1tekw-0" parent="." instance=ExtResource("1_shdt6")]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, 0, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.43909454, 0)
+shape = SubResource("CylinderShape3D_cqb3f")
